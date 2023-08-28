@@ -12,9 +12,11 @@ def hello_world():
 @app.route('/bio')
 def bio():
     return send_from_directory(directory=app.static_folder, path='bio.html')
+
 @app.route('/links')
 def links():
     return send_from_directory(directory=app.static_folder, path='links.html')
+
 @app.route('/schedule')
 def schedule():
     return send_from_directory(directory=app.static_folder, path='schedule.html')
